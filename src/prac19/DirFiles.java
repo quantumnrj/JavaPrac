@@ -4,11 +4,10 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DirectoryContent {
+public class DirFiles {
     private String dirPath;
-    public DirectoryContent(String directory){
+    public DirFiles(String directory){
         this.dirPath = directory;
-
     }
     public String getDirPath() {
         return dirPath;

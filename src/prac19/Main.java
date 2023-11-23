@@ -1,27 +1,21 @@
 package prac19;
 
-import java.util.Arrays;
 import java.util.List;
 public class Main {
     public static void main(String[] args) {
-        DirectoryContent directoryContent = new DirectoryContent("pract19/src/");
-        GenericArray<Integer> intArray = new GenericArray<>(5);
-        intArray.set(0, 123);
-
-        GenericArray<String> strArray = GenericArray.of(String.class, 5);
-        strArray.set(0, "Hello, World!");
-
-        String[] stringArray = {"Apple", "Banana", "Cherry"};
+        DirFiles dirFiles = new DirFiles("C:\\Users\\nazar\\Downloads");
+        MyUniversalArray<Integer> intArray = new MyUniversalArray<>(5);
+        intArray.set(0, 11111);
+        MyUniversalArray<String> strArray = MyUniversalArray.of(String.class, 5);
+        strArray.set(0, "Im the element №0");
+        String[] stringArray = {"one", "two", "three"};
         Integer[] integerArray = {1, 2, 3, 4, 5};
         ArrayToList arrayToListConverter = new ArrayToList();
-
         List<String> stringList = arrayToListConverter.convertArrayToList(stringArray);
         List<Integer> integerList = arrayToListConverter.convertArrayToList(integerArray);
 
-        System.out.println("List of Strings: " + stringList);
-        System.out.println("List of Integers: " + integerList);
-
-        System.out.println("=======================");
+        System.out.println("String list: " + stringList);
+        System.out.println("Integer list: " + integerList);
 
         for (int i = 0; i < intArray.length(); i++) {
             System.out.println(intArray.get(i));
@@ -29,20 +23,10 @@ public class Main {
         for (int i = 0; i < strArray.length(); i++) {
             System.out.println(strArray.get(i));
         }
-        System.out.println("=======================");
 
-
-
-
-        List<String> contentList = directoryContent.getDirectoryContent();
-
-        // Выводим первые 5 или меньше элементов
+        List<String> contentList = dirFiles.getDirectoryContent();
         for (int i = 0; i < Math.min(contentList.size(), 5); i++) {
             System.out.println(contentList.get(i));
         }
-
     }
-
-
-
 }
