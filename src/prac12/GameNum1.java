@@ -107,5 +107,4 @@ public class GameNum1 {
     public void setRound(int round) {
         this.round = round;
     }
-
 }

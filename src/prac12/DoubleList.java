@@ -97,7 +97,6 @@ public class DoubleList implements Queue<Integer> {
     public String toString() {
         return super.toString();
     }
-
     public int get(int i) {
         return this.element();
     }

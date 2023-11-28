@@ -43,7 +43,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        String[] expression = {"2", "3", "4", "5", "6", "*", "+", "-", "/"};
+        String[] expression = {"2", "4", "*", "8", "5", "*", "+"};
         double result = calculate(expression);
         System.out.println("Result is " + result);
     }

@@ -26,7 +26,7 @@ public class Main {
         int size;
         Scanner sc = new Scanner(System.in);
         size = sc.nextInt();
-        SortedNum3 obj = new SortedNum3(size);
+        Task3 obj = new Task3(size);
         for (int i = 0; i < size; i++) {
             obj.add_data();
         }

@@ -1,9 +1,9 @@
 package prac11;
 import java.util.Scanner;
 
-public class SortedNum3 {
+public class Task3 {
     private static Comparator[] array;
-    public SortedNum3(int size) {
+    public Task3(int size) {
         array = new Comparator[size];
 
     }
